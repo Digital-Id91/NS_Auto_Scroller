@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "NetSuite Auto Scroll",
+    "version": "1.0",
+    "description": "Automatically scroll to the bottom of the NetSuite saved search results.",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "webNavigation",
+      "storage"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.netsuite.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

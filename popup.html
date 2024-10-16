@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Auto Scroll Settings</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        min-width: 200px;
+        text-align: center;
+      }
+      label {
+        display: block;
+        margin: 10px 0 5px;
+      }
+      input {
+        width: 100px;
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Auto Scroll Settings</h2>
+
+    <label for="scrollSpeed">Scroll Speed</label>
+    <input type="number" id="scrollSpeed" step="0.1" value="0.5">
+
+    <label for="scrollDelay">Scroll Delay (ms)</label>
+    <input type="number" id="scrollDelay" value="25">
+
+    <label for="pauseAtBottom">Pause at Bottom (ms)</label>
+    <input type="number" id="pauseAtBottom" value="3000">
+
+    <label for="pauseAtTop">Pause at Top (ms)</label>
+    <input type="number" id="pauseAtTop" value="2000">
+
+    <button id="toggleButton">Turn On</button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
